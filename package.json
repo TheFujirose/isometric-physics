@@ -1,0 +1,39 @@
+{
+  "name": "isometric-physics",
+  "version": "1.0.0",
+  "description": "Zero-dependency isometric projection math, 2D/3D vector operations, and vessel position integration.",
+  "author": "Carson Fujita <carsonfujita@gmail.com>",
+  "repository": "https://github.com/TheFujirose/isometric-physics",
+  "license": "MIT",
+  "keywords": [
+    "isometric",
+    "projection",
+    "vectors",
+    "physics",
+    "math"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3"
+  }
+}
