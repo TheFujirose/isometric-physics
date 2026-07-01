@@ -30,9 +30,11 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
+    "docs": "typedoc",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
+    "typedoc": "^0.28.13",
     "tsup": "^8.5.1",
     "typescript": "^6.0.3"
   }

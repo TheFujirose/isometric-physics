@@ -1,7 +1,5 @@
 /**
- * @file vectors.ts
- * @description Lightweight 2D and 3D vector types and operations.
- * @version 1.0.0
+ * Lightweight 2D and 3D vector types and operations.
  */
 
 export type Vector2 = { x: number; y: number };

@@ -1,9 +1,5 @@
 /**
- * @file physics.ts
- * @description Pure vessel-position integration step, detached from React. Given a current
- * position, velocity, and heading, advances the position by one timestep and wraps it around
- * a square world of the given size.
- * @version 1.0.0
+ * Pure vessel-position integration step, detached from React.
  */
 import type { Point } from './isometric.js';
 
@@ -15,7 +11,6 @@ import type { Point } from './isometric.js';
  * @param deltaTime - Elapsed time since the last step, in seconds.
  * @param gridSize - Total span of the (square) world; position wraps at ±gridSize/2.
  * @returns The new { x, y } position, wrapped to stay within the world bounds.
- * @version 1.0.0
  */
 export const stepVesselPosition = (
     pos: Point,

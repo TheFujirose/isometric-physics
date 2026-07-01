@@ -1,0 +1,28 @@
+name: Bug report
+description: Report a problem with the library or documentation.
+labels: [bug]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the problem you saw.
+      placeholder: The isometric projection returns the wrong Y value when...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Share the smallest possible reproduction.
+      placeholder: 1. Import the function...
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened instead?
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, Node.js version, package version, and any relevant runtime details.

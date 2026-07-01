@@ -1,7 +1,5 @@
 /**
- * @file isometric.ts
- * @description Isometric projection math: standard 2:1 dimetric projection (X right-down, Y left-down, Z up).
- * @version 1.0.0
+ * Isometric projection math for the standard 2:1 dimetric projection.
  */
 
 export type Point = { x: number; y: number };
@@ -12,7 +10,6 @@ const SIN_30 = Math.sin(ISO_ANGLE);
 
 /**
  * Standard isometric projection (X right-down, Y left-down, Z up).
- * @version 1.0.0
  */
 export const isoTransform = (x: number, y: number, z = 0): Point => ({
     x: (x - y) * COS_30,
